@@ -3,7 +3,7 @@
 * ******ASNUM Enumeration******
 
 ```zsh
-http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum2.zip | gunzip | cut -d"," -f3 | sed 's/"//g' | sort -u | grep -i google
+curl -s http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum2.zip | gunzip | cut -d"," -f3 | sed 's/"//g' | sort -u | grep -i google
 ```
 * ******IPSPACE Enumeration******
 
