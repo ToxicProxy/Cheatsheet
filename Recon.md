@@ -1,11 +1,11 @@
 # Zero Packet Recon
 
-* ******ASNUM Enumeration******
+* ***ASNUM Enumeration***
 
 ```zsh
 curl -s http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum2.zip | gunzip | cut -d"," -f3 | sed 's/"//g' | sort -u | grep -i google
 ```
-* ******IPSPACE Enumeration******
+* ***IPSPACE Enumeration***
 
 ```zsh
 whois -h whois.radb.net -- '-i origin AS35995' | grep -Eo "([0-9.]+){4}/[0-9]+"
