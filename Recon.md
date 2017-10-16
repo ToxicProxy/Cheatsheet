@@ -26,3 +26,7 @@ curl https://certspotter.com/api/v0/certs\?domain\=example.com | jq '.[].dns_nam
 #Takes a list of domains and runs the host command on them, sorting them by IP.
 cat $1| while read line; do host "$line"; done |grep -E "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"|sort -n -t " " -k 4
 ```
+
+# Android APK Analysis
+https://android.fallible.co/
+https://apkscan.nviso.be/
