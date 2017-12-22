@@ -27,6 +27,11 @@ curl https://certspotter.com/api/v0/certs\?domain\=example.com | jq '.[].dns_nam
 cat $1| while read line; do host "$line"; done |grep -E "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"|sort -n -t " " -k 4
 ```
 
+**DNS Trails**
+
+```
+curl hxxps://app.securitytrails.com/api/whois/list/organization/Uber%20Technologies%2C%20Inc.?page=1 | jq .
+```
 # Android APK Analysis
 https://android.fallible.co/
 https://apkscan.nviso.be/
